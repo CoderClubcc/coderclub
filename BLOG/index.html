@@ -1,0 +1,26 @@
+---
+layout: page
+title: BLOG
+permalink: /BLOG/
+---
+
+
+<!-- Start Blog Post Section
+==================================== -->
+
+
+                   <!-- Single Post -->
+{% for post in site.categories.BLOG %}
+<article class="entry wow fadeInDown"  data-wow-duration="1000ms" data-wow-delay="300ms">
+  <div class="post-excerpt">
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    <p>介绍内容</p>
+    <a class="btn btn-transparent" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+  </div>
+  <div class="post-meta">
+    <span class="post-date">
+      <i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}
+    </span>
+  </div>
+</article>
+{% endfor %}
