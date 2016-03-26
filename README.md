@@ -1,5 +1,12 @@
 # coderclub
 
-UI设计ing
+  这是[coderclub.cc][1]的源码
+  这也是我们的第一个团队项目
 
-当前模板中，少一个connect的section
+# TODO
+
+- [ ] UI设计ing
+
+
+
+[1]:http://coderclub.cc/
